@@ -22,7 +22,7 @@ public class RedisConfig {
 	}
 
 	@Bean
-	
+	@Autowired
 	public RedisTemplate<String, Object> redisTemplate() {
 		final RedisTemplate<String, Object> template = new RedisTemplate<String, Object>();
 		template.setConnectionFactory(jedisConnectionFactory());
